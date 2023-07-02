@@ -1,13 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
-import InkLipquid from '../../src/fonts/InkLipquid.woff'
 
 const GlobalStyle = createGlobalStyle`
 
   // InkLipquid font 적용
   @font-face {
     font-family: 'InkLipquid';
-    src: local('InkLipquid'), url(${InkLipquid}) format('woff');
-    src: url(${InkLipquid}) format('woff');
+    src: local('InkLipquid'), url('src/font/InkLipquid.woff') format('woff');
+    src: url('src/font/InkLipquid.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
